@@ -1,0 +1,19 @@
+@use 'sass:math';
+
+// Colors
+//button
+$color-btn-primary: var(--shade-100);
+$color-btn-secondary: var(--shade-700);
+$color-btn-accent: var(--shade-200);
+
+$color-btn-const-font: $color-btn-primary;
+$color-btn-const-font-contained: $color-btn-secondary;
+
+$color-btn-const-bg: $color-btn-const-font;
+$color-btn-const-outlined: $color-btn-const-font;
+
+$color-btn-float-font: $color-btn-secondary;
+$color-btn-float-bg: $color-btn-primary;
+
+
+

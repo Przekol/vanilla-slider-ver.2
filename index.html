@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Slider</title>
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link href='https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap' rel='stylesheet' />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slider__container"></div>
+           <div class="slider__pagination"></div>
+          <div class="slider__button">
+            <div class="slider__button-prev">prev</div>
+            <div class="slider__button-next">next</div>
+        </div>
+    </div>
+
+
+    <template id="slider-pagination-item">
+        <a class="slider__pagination-btn btn"></a>
+    </template>
+
+    <template id="slide-item">
+        <div class="slide">
+            <picture>
+                <source media="(min-width: 760px)" srcset="">
+                <source srcset="">
+                <img class="slide__img" src="" alt="">
+            </picture>
+            <a href="" class="slide__link btn  btn-const btn--contained">zobacz więcej</a>
+        </div>
+    </template>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

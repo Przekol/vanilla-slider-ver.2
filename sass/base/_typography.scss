@@ -1,0 +1,15 @@
+@use '../utils/' as *;
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-400);
+	color: var(--shade-100);
+	background-color: var(--shade-600);
+	
+
+}
+ 
+h2 {
+	text-transform: uppercase;
+	font-size: var(--fs-700);
+}

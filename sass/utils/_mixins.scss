@@ -1,0 +1,17 @@
+@use '../abstracts/' as *;
+
+
+
+@mixin mq($breakpoint) {
+	$size: map-get($breakpoints, $breakpoint);
+
+	@if ($size) {
+		@media only screen and (min-width: #{$size}) {
+			@content;
+		}
+	} @else {
+		@error '"#{$breakpoint}" - It has no such value';
+	}
+}
+
+

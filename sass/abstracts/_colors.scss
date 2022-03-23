@@ -1,0 +1,19 @@
+$themes: (
+	'light': (
+		shade-100: hsl(0, 0%, 90%),
+		shade-200: hsl(0, 0%, 98%),
+		shade-300: hsl(0, 0%, 70%),
+		shade-400: hsl(0, 0%, 60%),
+		shade-500: hsl(0, 0%, 50%),
+		shade-600: hsl(0, 0%, 40%),
+		shade-700: hsl(0, 0%, 30%),
+		shade-800: hsl(0, 0%, 20%),
+		shade-900: hsl(0, 0%, 10%),
+		white-low-opacity: rgba(255, 255, 255, 0.3),
+		white-high-opacity: rgba(255, 255, 255, 0.7),
+		black-low-opacity: rgba(0, 0, 0, 0.3),
+		black-high-opacity: rgba(0, 0, 0, 0.7),
+	),
+	// 'dark': (
+	// ),,,
+);

@@ -1,0 +1,35 @@
+@use '../utils/' as *;
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: var(--fs-300);
+	font-weight: var(--fw-regular);
+	letter-spacing: 0.0892857143em;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: none;
+	// outline: none;
+	line-height: inherit;
+	user-select: none;
+	vertical-align: middle;
+	cursor: pointer;
+
+	&-const {
+		padding: calc(var(--spacing) * 0.25) calc(var(--spacing) * 0.75);
+		min-width: 64px;
+		height: 36px;
+		color: $color-btn-const-font;
+		background-color: transparent;
+		border-radius: 4px;
+	}
+	&--outlined {
+		border: 1px solid $color-btn-const-outlined;
+	}
+
+	&--contained {
+		color: $color-btn-const-font-contained;
+		background-color: $color-btn-const-bg;
+	}
+}

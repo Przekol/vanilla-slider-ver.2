@@ -1,0 +1,49 @@
+@use '../abstracts' as *;
+@use '../utils' as *;
+
+
+:root {
+	@each $prop, $value in $font-family {
+		--ff-#{$prop}: #{$value};
+	}
+
+	@each $prop, $value in $font-weight {
+		--fw-#{$prop}: #{$value};
+	}
+
+	@each $screen-size, $value in $main-spacing {
+		@if $screen-size == basic {
+			--spacing: #{$value};
+		} @else {
+			@include mq($screen-size) {
+				--spacing: #{$value};
+			}
+		}
+	}
+
+	@each $screen-size, $property in $font-sizes {
+		@if $screen-size == small {
+			@each $prop, $value in $property {
+				--fs-#{$prop}: #{$value};
+			}
+		} @else {
+			@include mq($screen-size) {
+				@each $prop, $value in $property {
+					--fs-#{$prop}: #{$value};
+				}
+			}
+		}
+	}
+
+	@each $mode, $property in $themes {
+		@each $prop, $value in $property {
+			@if $mode == 'dark' {
+				@media (prefers-color-scheme: dark) {
+					--clr-#{$prop}: #{$value};
+				}
+			} @else {
+				--#{$prop}: #{$value};
+			}
+		}
+	}
+}
